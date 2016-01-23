@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Movie_Details"
+    android:id="@+id/details_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/container_abz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_poster"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_title"
+        android:layout_toRightOf="@+id/img_poster"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_release_date"
+        android:layout_below="@+id/txt_title"
+        android:layout_toRightOf="@+id/img_poster"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_avg_vote"
+        android:layout_below="@+id/txt_release_date"
+        android:layout_toRightOf="@+id/img_poster"
+        />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Favorite"
+                android:id="@+id/btn_fav"
+                android:src="@drawable/ic_star_white_24dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_overview"
+                android:layout_below="@+id/img_poster"
+
+                />
+
+        <ListView
+            android:id="@+id/TList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_overview">
+
+        </ListView>
+
+            <ListView
+                android:id="@+id/RList"
+                android:layout_width="match_parent"
+                android:layout_height="3000dp"
+                android:layout_below="@+id/TList"
+                >
+
+            </ListView>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+</FrameLayout>
